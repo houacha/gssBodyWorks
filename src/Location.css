@@ -1,0 +1,8 @@
+.location-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.map-container {
+  padding-left: 30px;
+}
