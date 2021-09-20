@@ -1,0 +1,97 @@
+@media (min-width: 769px) {
+  .nav-list > li > a {
+    text-decoration: none;
+    color: #666;
+    font-size: 13px;
+    width: 85.5%;
+    display: block;
+    padding: 11.5px 15px 10px;
+  }
+
+  .nav-list > li {
+    list-style: none;
+    border-bottom: 1px dashed #efefef;
+    background-color: #fff;
+  }
+
+  .nav-list {
+    padding: 0;
+    border-top: 1px solid #e0e0e0;
+    border-left: 1px solid #c3c3c3;
+    border-right: 1px solid #c3c3c3;
+    border-bottom: 1px solid #c3c3c3;
+    border-radius: 5px;
+    padding: 32px 0 10px;
+    background-image: linear-gradient(
+      to top,
+      transparent 50%,
+      rgb(92, 91, 91) 55%,
+      rgb(255, 255, 255)
+    );
+  }
+
+  .nav-bar {
+    width: 205px;
+  }
+
+  .nav-list > li > a:hover {
+    background-color: #f3f3f3;
+    color: #0081cd;
+  }
+
+  .current {
+    background-color: #f3f3f3;
+    color: #0081cd !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-bar {
+    display: block;
+    top: 0px;
+    left: -80%;
+    min-height: 100%;
+    width: 80%;
+    position: absolute;
+    background: url(./assets/concrete.png);
+    z-index: -1;
+  }
+
+  .nav-list > li {
+    background-color: transparent;
+    border-bottom: none;
+  }
+
+  .nav-list > li > a {
+    width: auto;
+    text-decoration: none;
+    display: block;
+    font-weight: 300;
+    color: #fff;
+    padding: 15px;
+    font-size: 16px;
+    border-bottom: 1px solid #111 !important;
+    text-shadow: 0 1px 0 rgb(0 0 0 / 70%);
+    box-shadow: inset 0 0 1px rgb(255 255 255 / 20%),
+      inset 0 1px 2px rgb(255 255 255 / 10%);
+  }
+
+  .nav-list {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .current {
+    background-color: rgb(43, 43, 43) !important;
+    box-shadow: inset 0px 0px 5px 0px #222 !important;
+    color: #fff !important;
+  }
+
+  .current:active {
+    background-color: rgb(43, 43, 43) !important;
+    -webkit-tap-highlight-color: transparent;
+  }
+}

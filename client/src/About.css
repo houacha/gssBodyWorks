@@ -1,0 +1,17 @@
+img {
+  padding: 6px;
+  float: left;
+  margin: 5px 10px 10px 0;
+  border: #000 solid 1px;
+}
+
+a {
+  font-size: 12px;
+  color: #0081cd;
+  text-decoration: none;
+}
+
+a:visited {
+  color: none;
+}
+

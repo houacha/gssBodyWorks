@@ -1,0 +1,14 @@
+.location-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.map-container {
+  padding-left: 30px;
+}
+
+@media (max-width: 768px){
+  .map-container{
+    padding-left: 0;
+  }
+}

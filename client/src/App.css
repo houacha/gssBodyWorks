@@ -1,0 +1,37 @@
+.App {
+  background-color: #eee;
+  padding-bottom: 62px;
+  min-width: 980px;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 91.2vh;
+}
+
+@media (max-width: 768px) {
+  .App {
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    word-wrap: break-word;
+    background: #fff;
+    color: #3f454d;
+    font-size: 13px;
+    line-height: 22px;
+    overflow-x: visible;
+    min-width: 100%;
+    min-height: 100vh;
+    transition: transform 0.5s ease;
+  }
+
+  img {
+    float: initial;
+    padding: 0;
+  }
+
+  .show {
+    transform: translateX(80%);
+    transition: all 0.5s ease;
+  }
+
+  #root {
+    overflow-x: hidden;
+  }
+}
