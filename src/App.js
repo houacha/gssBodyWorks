@@ -13,13 +13,6 @@ function App() {
   const [current, setCurrent] = React.useState(0);
   const [appClass, setAppClass] = React.useState(["App"]);
   const [hamClass, setHamClass] = React.useState("");
-  const [data, setData] = React.useState(null);
-
-  React.useEffect(() => {
-    fetch("/api")
-      .then((res) => res.json())
-      .then((data) => setData(data.message));
-  }, []);
 
   const addRemoveClass = () => {
     if (appClass.includes("show")) {
@@ -69,7 +62,6 @@ function App() {
           </Route>
         </Switch>
       </div>
-      <p>{!data ? "Loading..." : data}</p>
     </Router>
   );
 }
