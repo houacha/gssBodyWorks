@@ -123,15 +123,25 @@ textarea {
     color: #333;
     box-shadow: inset 0px 1px 2px 0px rgb(0 0 0 / 10%);
     font-size: 16px;
+    width: 90%;
   }
 
   .form-input:focus-visible {
     border: 1px solid #3693d5 !important;
     outline: none;
+    background-color: #fff;
   }
 
   .form-label {
     font-weight: normal;
     color: #51555a;
+  }
+
+  .row > * {
+    width: 33.33333333%;
+  }
+
+  .last-name {
+    width: 49.7%;
   }
 }

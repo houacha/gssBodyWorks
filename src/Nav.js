@@ -11,6 +11,16 @@ function Nav({ setCurrent, current }) {
     { link: "/location", val: "Location" },
     { link: "/contact", val: "Contact Information" },
   ];
+
+  const setSession = (i) => {
+    setCurrent(i);
+    sessionStorage.setItem("current", i);
+  };
+
+  React.useEffect(() => {
+    setCurrent(Number(sessionStorage.getItem("current")));
+  }, [setCurrent]);
+
   return (
     <div className="nav-bar">
       <ul className="nav-list">
@@ -23,7 +33,7 @@ function Nav({ setCurrent, current }) {
                   <Link
                     className="current"
                     to={linkArr[i]["link"]}
-                    onClick={() => setCurrent(i)}
+                    onClick={() => setSession(i)}
                   >
                     {linkArr[i]["val"]}
                   </Link>
@@ -32,7 +42,7 @@ function Nav({ setCurrent, current }) {
             } else {
               return (
                 <li key={i}>
-                  <Link to={linkArr[i]["link"]} onClick={() => setCurrent(i)}>
+                  <Link to={linkArr[i]["link"]} onClick={() => setSession(i)}>
                     {linkArr[i]["val"]}
                   </Link>
                 </li>
